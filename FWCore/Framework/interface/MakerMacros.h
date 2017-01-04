@@ -15,5 +15,5 @@
 
 
 #define DEFINE_FWK_MODULE(type) \
-  DEFINE_EDM_PLUGIN (edmplugin::PluginFactory<Maker* ()> MakerPluginFactory,edm::WorkerMaker<type>,#type); DEFINE_FWK_PSET_DESC_FILLER(type)
+  DEFINE_EDM_PLUGIN (edm::MakerPluginFactory,edm::WorkerMaker<type>,#type); DEFINE_FWK_PSET_DESC_FILLER(type)
 #endif
